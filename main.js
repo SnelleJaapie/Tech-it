@@ -161,3 +161,13 @@ const inventory = [
     sold: 8,
   },
 ];
+//Program here
+
+const totalInventory = []
+
+const tvsToSell = inventory.map((television) => {
+
+  const tvToSell = television.originalStock - television.sold
+  return tvToSell
+})
+console.log(tvsToSell)
