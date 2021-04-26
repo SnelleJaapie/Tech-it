@@ -170,4 +170,4 @@ const tvsToSell = inventory.map((television) => {
   const tvToSell = television.originalStock - television.sold
   return tvToSell
 })
-console.log(tvsToSell)
+console.log("We hebben ", tvsToSell, "in voorraad")
