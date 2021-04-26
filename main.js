@@ -165,9 +165,14 @@ const inventory = [
 
 const totalInventory = []
 
-const tvsToSell = inventory.map((television) => {
-
-  const tvToSell = television.originalStock - television.sold
-  return tvToSell
+const tvSoldArray = inventory.map((television) => {
+  return television.originalStock - television.sold;
 })
-console.log("We hebben ", tvsToSell, "in voorraad")
+
+let total = 0;
+
+for (let index = 0; index < tvSoldArray.length; index++) {
+ total += tvSoldArray[index];
+
+}
+console.log(total)
